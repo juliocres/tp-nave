@@ -15,7 +15,8 @@
 }
 body{
     background-color: #fbfaff;
-    height: 200vh;
+    height: 300vh;
+    
 }
 /* Header NAve*/
 .header-nave{
@@ -29,6 +30,7 @@ body{
     position: fixed;
     padding: 16px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.61);
+    
 }
 
 .nav-header{
@@ -280,11 +282,13 @@ body{
     text-decoration: none;
     font-weight: 700;
     color: #360c72;
+    display: flex;
+    flex-direction: row;
 }
 
 .qr-know__more:hover{
     text-decoration: underline;
-    padding: 14px 0px;
+
 }
 
 .qr_image{
@@ -297,6 +301,48 @@ body{
 
 .arrow-icon{
     color: #360c72;
+    display: block;
 }
+
+.nave-footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 24px;
+
+}
+
+.nave-footer__nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.title-footer{
+    color: var(--color-title);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.list-nav_footer{
+    list-style-type: none;
+    margin: 8px 0px;
+}
+
+.link-footer{
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: var(--color-title);
+    font-weight: 400px;
+}
+
+.link-footer:hover{
+    text-decoration: underline;
+    color: #652bdf;
+
+}
+
 
 
