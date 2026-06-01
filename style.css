@@ -74,8 +74,6 @@ body{
     flex-direction: row;
     justify-content: center;
     gap: 8px;
-
-
 }
 
 .btn-header{
@@ -91,7 +89,6 @@ body{
 
 .btn-header:hover{
     background-color: rgb(202, 180, 223);
-    
 }
 
 .btn-entra{
@@ -119,20 +116,18 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
     gap: 50px;
     
     
 }
 .tite-welcome{
     font-size: 40px;
-    color:var(--color-titlt);
+    color:var(--color-title);
 }
 
 .welcome-card{
     background-color: #fbfaff;
-    max-width: 1022px;
-    height: 314px;
+    max-width: 1022px;   
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -148,8 +143,6 @@ body{
     transition: transform .3s ease-out;
     border-radius: 16px;
     gap: 20px;
-
-
 }
 
 .incon-card{
@@ -166,7 +159,6 @@ body{
     flex-direction: column;
     justify-content: space-between;
     font-size: 18px;
-    
     width: 100%;
 }
 
@@ -244,15 +236,12 @@ body{
 .btn_know:hover{
     background-color: black;
     color:  rgb(226, 210, 255);
-    
-    
 }
 /*container QR Nave*/
 
 .title-charge{
     font-size: 40px;
     color: var(--color-title);
-    
 }
 
 .charge-nave{
@@ -260,19 +249,24 @@ body{
     flex-direction: row;
     width: 100%;
     justify-content: center;
-
+    align-items: center;
+}
+.charge-nave_card{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
 }
 
 .qr-nave{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 345px;
-    width: 479.5px;
+    
+    
     padding: 50px 22px;
     gap: 30px;
+    min-width: 50%;
 }
-
 .title-card{
     font-size: 24px;
     color: var(--color-title);
@@ -283,6 +277,7 @@ body{
     font-size: 18px;
     color: var(--color-title);
     line-height: 24px;
+    width: 100%;
 }
 
 .card-know{
@@ -309,9 +304,11 @@ body{
 .qr_image{
     display: flex;
     height: 345px;
-    width: 479.5px;
+    width: auto;
     overflow: hidden;
     padding: 21px 18px;
+    min-width: 50%;
+
 }
 
 .arrow-icon{
@@ -367,9 +364,6 @@ body{
 }
 
 /*VERSION MOBILE*/
-@media screen and (max-width: 900px){
-    
-}   
 
 @media screen and (max-width: 768px){
     .welcome-card{
@@ -412,20 +406,78 @@ body{
         width: 50px;
         text-align: left;
     }
+
     .logo-nave__menu {
         display: block;
         flex-grow: 1;        
         text-align: center;
     }
 
-    .charge-nave{
+    .tite-welcome{
+        text-align: center;
+    }
+
+    .qr_image{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .qr_image img{
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .charge-nave_card{
+        display: flex;
         flex-direction: column-reverse;
+        align-items:center;
+        width: 100%;
     }
 
     .title-charge{
         text-align: center;
     }
 
+    
+    .history_nave {
+        display: flex;
+        flex-direction: column;   
+        align-items: center;      
+        text-align: center;       
+        gap: 24px;                
+        padding: 40px 20px;       
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .history-content {
+        width: 100%;
+    }
+    
+    .history_information {
+        display: flex;
+        flex-direction: column;  
+        gap: 10px;                
+    }
+    
+    .title-history {
+        font-size: 24px;         
+        color: #2b2b2b;
+    }
+    
+    .history_paragraph {
+        font-size: 15px;
+        display: block;         
+    }
+    
+    .content_btn_know {
+        width: 100%;             
+        display: flex;
+        justify-content: center;  
+    }
     .nave-footer {
         display: flex;
         flex-direction: column;
@@ -438,43 +490,6 @@ body{
         gap: 30px 20px;
         width: 100%;
         max-width: 400px;
-    }
-    
-    .history_nave {
-        display: flex;
-        flex-direction: column;   
-        align-items: center;      
-        text-align: center;       
-        gap: 24px;                
-        padding: 40px 20px;       
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    .histoy-content {
-        width: 100%;
-    }
-
-    .history_information {
-        display: flex;
-        flex-direction: column;  
-        gap: 10px;                
-    }
-
-    .title-history {
-        font-size: 24px;         
-        color: #2b2b2b;
-    }
-
-    .history_paragraph {
-        font-size: 15px;
-        display: block;         
-    }
-
-    .content_btn_know {
-        width: 100%;             
-        display: flex;
-        justify-content: center;  
     }
 
     
