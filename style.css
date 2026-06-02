@@ -56,7 +56,6 @@ body{
     display: flex;
     flex-direction: row;
     margin: 0px 4px;
-    padding: 6px 24px;
     justify-content: center;
     align-items: center;
     font-size: 14px;
@@ -66,7 +65,15 @@ body{
     text-decoration: none;   
     color: black;   
     font-weight: bold;
+    border-radius: 50px;
+    padding: 6px 24px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    
+}
 
+.nave-nav:hover{
+    background-color: rgb(202, 180, 223);
+    color: #652bdf;
 }
 
 .header-content__nav{
@@ -174,6 +181,7 @@ body{
 .history_nave{
     background-color: rgb(226, 210, 255);
     width: 100%;
+    max-width: 1022px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -253,18 +261,17 @@ body{
 .charge-nave_card{
     display: flex;
     flex-direction: row;
-    flex: 1;
+    max-width: 1022px;
+    padding: 0 50px;
+    
 }
 
 .qr-nave{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    
-    
     padding: 50px 22px;
     gap: 30px;
-    min-width: 50%;
+    flex: 1;
 }
 .title-card{
     font-size: 24px;
@@ -302,12 +309,9 @@ body{
 
 .qr_image{
     display: flex;
-    height: 345px;
-    width: auto;
-    overflow: hidden;
-    padding: 21px 18px;
-    min-width: 50%;
-
+    width: 100%;
+    height: 100%;
+    flex: 1;
 }
 
 .arrow-icon{
@@ -363,6 +367,21 @@ body{
 }
 
 /*VERSION MOBILE*/
+@media screen and (max-width: 950px) {
+    .tite-welcome{
+        font-size: 30px;
+    }
+    .title-charge{
+        font-size: 30px;
+    }
+    .text-card{
+        font-size: 20px;
+    }
+    .paragraph-card{
+        font-size: 16px;
+    }
+    
+}
 
 @media screen and (max-width: 768px){
     .welcome-card{
@@ -426,13 +445,13 @@ body{
     .qr_image img{
         max-width: 100%;
         height: auto;
-        display: block;
+        display: flex;
     }
 
     .charge-nave_card{
         display: flex;
         flex-direction: column-reverse;
-        align-items:center;
+        padding: 0 0;
         width: 100%;
     }
 
